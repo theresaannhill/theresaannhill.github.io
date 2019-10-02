@@ -26,49 +26,51 @@ h6 {
 }
 
 .topnav {
-    font-size: 20px; 
+    font-size: 50px; 
     color: black;
     align-content: center;
     
 }
-.nav navbar-nav navbar-right {
+.nav {
     font-size: 20px;
     color: black;
-    align-items: baseline;
-
+    align-items: baseline;    
 }
 
-.nav li {
-    display: inline;
-}
-
-.nav a {
-    text-decoration: none;
+.navbar-nav navbar-right {
     color: black;
-    width: 100px;
-    height: 30px;
-    display: inline-block;
-    padding: 5px;
-    font-size: 15px;
-    align-content: space-between;
+    text-decoration: none;
 }
 
-.collapse navbar-collapse {
-    font-size: 30px;
-    color: white;
-    background: black;
-    align-items: flex-end;
-    align-self: auto;
+.navbar {
+    color: black;
+    text-decoration: none;
 }
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.network-name {
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+
+
 
 .lead {
     font-size: 18px;
     font-weight: 400;
+    color: black;
 }
 
 .intro-header {
     padding-top: 50px;  
-    padding-bottom: 80px;
+    padding-bottom: 50px;
     text-align: center;
     color: #f8f8f8;
     background: url(assets/crop.jpg) no-repeat center;
@@ -114,7 +116,7 @@ h6 {
 
 
 
-@media(max-width:767px) {
+@media(max-width:800px) {
     .intro-message {
         padding-bottom: 15%;
     }
@@ -151,20 +153,17 @@ h6 {
     text-align: block;
 }
 
+/* .img-responsive {
+    float: right;
+    width: 400px;
+    height: 500px;
+} */
+
 .contect-section-a > col-sm-6 >p class.lead {
     float: left;
     text-align: left; 
 }
 
-.img-responsive {
-    height: 400px;
-    width: 300px;
-    position: static;
-    left: 10px;
-    top: 1px;
-    bottom: 20px;
-    float: right;
-    }
 
 .section-heading {
     display: inline;
@@ -185,14 +184,14 @@ h6 {
 
 
 .content-section-b {
-    padding: 50px 0;
+    padding: 75px 0;
     border-top: 1px solid #e7e7e7;
     border-bottom: 1px solid #e7e7e7;
     text-align: center;
     
 }
 
-.content-section-b > col-sm-4 {
+.content-section-b > col-2 {
     align-items: left;
     align-content: space-between;
 }
@@ -201,10 +200,11 @@ h6 {
     margin-bottom: 30px;
 }
 
-.section-heading-spacer {
+.section-heading-spacer > h3 {
     float: left;
     width: 200px;
     border-top: 3px solid #e7e7e7;
+    font-size: 25px;
 }
 
 .section-heading-spacer1{
@@ -286,6 +286,10 @@ footer {
     background-color: #f8f8f8;
     text-align: left;
     text-decoration: none;
+}
+
+footer > .list-inline {
+    text-align: center;
 }
 
 p.copyright {
